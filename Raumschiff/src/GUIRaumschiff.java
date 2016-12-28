@@ -197,7 +197,7 @@ public class GUIRaumschiff {
 	    				ausgabetxt3.setText("ist nicht in der Datenbank vorhanden");
 						break;
                 	}
-                	
+                	konsoletxt.setText("");
                 }
             }
         });
