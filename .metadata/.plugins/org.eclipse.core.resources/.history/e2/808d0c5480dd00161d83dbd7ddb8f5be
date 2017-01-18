@@ -3,6 +3,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
+import java.net.URL;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -17,7 +18,7 @@ public class GUIRaumschiff {
 	
 	private static ImageIcon loadImage() {
 
-        ImageIcon ii = new ImageIcon("src/images/Erde.png");
+        
         return ii;
     }
 	
@@ -232,7 +233,7 @@ public class GUIRaumschiff {
                 	ausgabetxt.setText("Hyperraumsprung ausgeführt!");
             		ausgabetxt2.setText("Willkommen im Orbit von '"+konsoletxt.getText()+"' !");
     				ausgabetxt3.setText("");
-    				
+    				ImageIcon ii = new ImageIcon("src/images/"+position+".png");
     				zielkoordinatenTrue = false;
                 }
                 else if(!raumschiff1.triebwerke&&!zielkoordinatenTrue){

@@ -4,10 +4,11 @@
 	<section name="FatJarPackageWizard">
 		<item value="C:\Users\Lukas\Documents\Programmieren\programming" key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION"/>
 		<item value="GUIRaumschiff - Raumschiff" key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME"/>
-		<item value="C:\Users\Lukas\Documents\Programmieren\programming\Sonstiges\Raumschiff_v_0.0.3.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
+		<item value="C:\Users\Lukas\Documents\Programmieren\programming\Sonstiges\Raumschiff_v_0.0.4.jar" key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION"/>
 		<item value="false" key="FatJarPackageWizardPage.ANTSCRIPT_SAVE"/>
 		<item value="1" key="FatJarPackageWizardPage.LIBRARY_HANDLING"/>
 		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\Lukas\Documents\Programmieren\programming\Sonstiges\Raumschiff_v_0.0.4.jar"/>
 			<item value="C:\Users\Lukas\Documents\Programmieren\programming\Sonstiges\Raumschiff_v_0.0.3.jar"/>
 			<item value="C:\Users\Lukas\Documents\Programmieren\programming\Sonstiges\Raumschiff_v_0.0.2.jar"/>
 		</list>

@@ -3,7 +3,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 
-
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -13,13 +12,13 @@ import javax.swing.JTextField;
 
 public class GUIRaumschiff {
 	static boolean zielkoordinatenTrue = false;
-	static String position = null;
 	
 	private static ImageIcon loadImage() {
 
-        ImageIcon ii = new ImageIcon("src/images/Erde.png");
+        ImageIcon ii = new ImageIcon("Erde.png");
         return ii;
     }
+	
 	
 	
 	public static void main(String[]args){
@@ -168,35 +167,30 @@ public class GUIRaumschiff {
 						ausgabetxt.setText("Zielort:");
 	            		ausgabetxt2.setText("'"+konsoletxt.getText()+"'");
 	    				ausgabetxt3.setText("");
-	    				position = "Erde";
 						break;
 					case "Mars":
 						zielkoordinatenTrue=true;
 						ausgabetxt.setText("Zielort:");
 	            		ausgabetxt2.setText("'"+konsoletxt.getText()+"'");
 	    				ausgabetxt3.setText("");
-	    				position = "Mars";
 						break;
 					case "Hoth":
 						zielkoordinatenTrue=true;
 						ausgabetxt.setText("Zielort:");
 	            		ausgabetxt2.setText("'"+konsoletxt.getText()+"'");
 	    				ausgabetxt3.setText("");
-	    				position = "Hoth";
 						break;
 					case "Tatooine":
 						zielkoordinatenTrue=true;
 						ausgabetxt.setText("Zielort:");
 	            		ausgabetxt2.setText("'"+konsoletxt.getText()+"'");
 	    				ausgabetxt3.setText("");
-	    				position = "Tatooine";
 						break;
 					case "Corouscant":
 						zielkoordinatenTrue=true;
 						ausgabetxt.setText("Zielort:");
 	            		ausgabetxt2.setText("'"+konsoletxt.getText()+"'");
 	    				ausgabetxt3.setText("");
-	    				position = "Corouscant";
 						break;
 					case "Todesstern":
 						ausgabetxt.setText("Zielort wurde leider zerstört");
@@ -208,7 +202,6 @@ public class GUIRaumschiff {
 						ausgabetxt.setText("Zielort:");
 	            		ausgabetxt2.setText("'"+konsoletxt.getText()+"'");
 	    				ausgabetxt3.setText("");
-	    				position = "Mond";
 						break;
 					default:
 						ausgabetxt.setText("Zielort:");
@@ -232,7 +225,6 @@ public class GUIRaumschiff {
                 	ausgabetxt.setText("Hyperraumsprung ausgeführt!");
             		ausgabetxt2.setText("Willkommen im Orbit von '"+konsoletxt.getText()+"' !");
     				ausgabetxt3.setText("");
-    				
     				zielkoordinatenTrue = false;
                 }
                 else if(!raumschiff1.triebwerke&&!zielkoordinatenTrue){
