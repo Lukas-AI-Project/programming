@@ -1,0 +1,33 @@
+import java.awt.*;
+import java.awt.event.*;
+import java.awt.image.*;
+import java.io.*;
+import java.net.URL;
+
+import javax.imageio.*;
+import javax.swing.*;
+
+/**
+ * This class demonstrates how to load an Image from an external file
+ */
+public class GraphicMain{
+          
+    
+    public static void main(String[] args) {
+    	Image image = null;
+    	try {
+    	    URL url = new URL(
+    	        "http://www.personal.psu.edu/acr117/blogs/audrey/images/image-2.jpg");
+    	    image = ImageIO.read(url);
+    	} catch (IOException e) {
+    	}
+
+    	// Use a label to display the image
+    	JFrame frame = new JFrame();
+
+    	JLabel lblimage = new JLabel(new ImageIcon(image));
+    	frame.getContentPane().add(lblimage, BorderLayout.CENTER);
+    	frame.setSize(300, 400);
+    	frame.setVisible(true);
+    }
+}

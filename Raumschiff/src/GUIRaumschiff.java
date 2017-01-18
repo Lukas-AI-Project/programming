@@ -2,6 +2,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -11,14 +13,24 @@ import javax.swing.JTextField;
 public class GUIRaumschiff {
 	static boolean zielkoordinatenTrue = false;
 	
+	private static ImageIcon loadImage() {
+
+        ImageIcon ii = new ImageIcon("src/images/Erde.png");
+        return ii;
+    }
+	
+	
+	
 	public static void main(String[]args){
+		
+		
 		
 	final Raumschiff raumschiff1 = new Raumschiff("Scavenger", 25, 25, false, false);
 		JFrame myFrame = new JFrame("Raumschiffkonsole");
 
         myFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         myFrame.setLayout(null);
-        myFrame.setSize(585, 420);
+        myFrame.setSize(585, 620);
         myFrame.setLocation(600, 250);
         
         JLabel ausgabe = new JLabel("Raumschiffausgabe:");
@@ -197,7 +209,7 @@ public class GUIRaumschiff {
 	    				ausgabetxt3.setText("ist nicht in der Datenbank vorhanden");
 						break;
                 	}
-                	konsoletxt.setText("");
+                	
                 }
             }
         });
@@ -230,15 +242,23 @@ public class GUIRaumschiff {
             		ausgabetxt2.setText("Keine Zielkoordinaten vorhanden");
     				ausgabetxt3.setText("");
                 }
+                konsoletxt.setText("");
             }
         });
         myFrame.add(hyperraumsprung);
         
-        
-        
+        ImageIcon ii = loadImage();
+
+        JLabel bild = new JLabel(ii);
+        bild.setSize(528, 279);
+        bild.setLocation(22, 280);
+        myFrame.add(bild);
         
        
 		myFrame.setVisible(true);
+		
+		
+		
 		
 		
 	}
